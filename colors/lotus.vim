@@ -63,6 +63,7 @@ hi Underlined   ctermfg=grey  guifg=red
 hi Ignore		ctermfg=red	guifg=red
 hi Error		ctermfg=160 ctermbg=none	guifg=#d70000
 hi Todo			ctermfg=red	guifg=red
+hi Integer ctermfg=35 guifg=#00af5f
 
 "===================== Ruby ========================"
 
@@ -81,7 +82,7 @@ hi rubyNestedCurlyBraces	ctermfg=red	guifg=red
 hi rubyNestedAngleBrackets	ctermfg=red	guifg=red
 hi rubyNestedSquareBrackets	ctermfg=red	guifg=red
 hi rubyASCIICode		ctermfg=red	guifg=red
-hi rubyInteger			ctermfg=185	guifg=white
+hi def link rubyInteger			Integer
 hi rubyFloat			ctermfg=185	guifg=#d7d75f
 hi rubyLocalVariableOrMethod	ctermfg=red	guifg=red
 hi rubyBlockArgument		ctermfg=red	guifg=red
