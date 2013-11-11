@@ -14,8 +14,8 @@ endif
 " hi DiffDelete		ctermfg=red	guifg=lightgray
 " hi DiffText		ctermfg=red	guifg=lightgray
 " hi ErrorMsg		ctermfg=red	guifg=lightgray
-" hi VertSplit		ctermfg=red	guifg=lightgray
-" hi Folded		ctermfg=red	guifg=lightgray
+hi VertSplit cterm=none ctermfg=DarkGray guifg=DarkGray
+hi Folded ctermfg=black ctermbg=grey
 " hi FoldColumn		ctermfg=red	guifg=lightgray
 " hi IncSearch		ctermfg=red	guifg=lightgray
 " hi ModeMsg		ctermfg=red	guifg=lightgray
@@ -24,8 +24,8 @@ endif
 " hi Question		ctermfg=red	guifg=lightgray
 " hi Search		ctermfg=red	guifg=lightgray
 " hi SpecialKey		ctermfg=red	guifg=lightgray
-" hi StatusLine		ctermfg=red	guifg=lightgray
-" hi StatusLineNC	ctermfg=red	guifg=lightgray
+hi StatusLine ctermfg=DarkCyan guifg=DarkCyan
+hi StatusLineNC ctermfg=DarkGray guifg=LightGray
 " hi Title		ctermfg=red	guifg=lightgray
 " hi Visual		ctermfg=red	guifg=lightgray
 " hi VisualNOS		ctermfg=red	guifg=lightgray
@@ -34,6 +34,13 @@ endif
 " hi Menu		ctermfg=red	guifg=lightgray
 " hi Scrollbar		ctermfg=red	guifg=lightgray
 " hi Tooltip		ctermfg=red	guifg=lightgray
+
+hi TabLineFill ctermfg=DarkGray
+hi TabLine ctermbg=DarkGray ctermfg=Black cterm=none
+hi TabLineSel ctermbg=none ctermfg=Cyan
+
+hi Pmenu ctermfg=2 ctermbg=black
+hi PmenuSel ctermfg=white ctermbg=black
 
 " syntax highlighting groups
 hi LineNr		ctermfg=252	guifg=252
@@ -44,12 +51,12 @@ hi Statement		ctermfg=32	guifg=32
 hi PreProc		ctermfg=252	guifg=252
 hi Type		ctermfg=167	guifg=167
 hi Special		ctermfg=252	guifg=252
-hi Underlined		ctermfg=red	guifg=red
+hi Underlined   ctermfg=grey  guifg=red
 hi Ignore		ctermfg=red	guifg=red
 hi Error		ctermfg=160 ctermbg=none	guifg=160	guibg=none
 hi Todo			ctermfg=red	guifg=red
 
-" Alfa version notes: color 'red' means I haven't set color yet
+"===================== Ruby ========================"
 
 hi rubyEscape			ctermfg=252	guifg=252
 hi rubyInterpolationDelimiter	ctermfg=252	guifg=252
@@ -71,7 +78,7 @@ hi rubyFloat			ctermfg=185	guifg=185
 hi rubyLocalVariableOrMethod	ctermfg=red	guifg=red
 hi rubyBlockArgument		ctermfg=red	guifg=red
 hi rubyConstant			ctermfg=252	guifg=252
-hi rubySymbol			ctermfg=167	guifg=167
+hi rubySymbol			ctermfg=3	guifg=167
 hi rubyStringSpecial		ctermfg=red	guifg=red
 hi rubyBlockParameter		ctermfg=252	guifg=252
 hi rubyPredefinedConstant	ctermfg=red	guifg=red
@@ -84,12 +91,12 @@ hi rubyClassDeclaration		ctermfg=red	guifg=red
 hi rubyModuleDeclaration	ctermfg=red	guifg=red
 hi rubyFunction			ctermfg=252	guifg=252
 hi rubyDefine			ctermfg=darkblue	guifg=32
-hi rubyClass			ctermfg=25	guifg=25
-hi rubyModule			ctermfg=25	guifg=25
+hi rubyClass			ctermfg=5	guifg=25
+hi rubyModule			ctermfg=5	guifg=25
 hi rubyBlock			ctermfg=252	guifg=252
-hi rubyConditional		ctermfg=81	guifg=81
+hi rubyConditional		ctermfg=2	guifg=81
 hi rubyRepeat			ctermfg=81	guifg=81
-hi rubyControl			ctermfg=81	guifg=81
+hi rubyControl			ctermfg=45	guifg=81
 hi rubyKeyword			ctermfg=red	guifg=red
 hi rubyOperator			ctermfg=red	guifg=red
 hi rubyBeginEnd			ctermfg=red	guifg=red
@@ -105,7 +112,7 @@ hi rubyDocumentation		ctermfg=red	guifg=red
 hi rubyData			ctermfg=red	guifg=red
 
 hi railsMethod    ctermfg=107 guifg=107
-hi railsUserClass  ctermfg=107 guifg=107
+hi railsUserClass  ctermfg=28 cterm=bold
 hi railsUserMethod  ctermfg=107 guifg=107
 
 " hi rubyRailsError	ctermfg=lightgray	guifg=lightgray
@@ -116,19 +123,19 @@ hi railsUserMethod  ctermfg=107 guifg=107
 "hi javascriptRailsClass	ctermfg=lightgray	guifg=lightgray
 "hi javascriptRailsFunction	ctermfg=lightgray	guifg=lightgray
 "hi htmlError	ctermfg=lightgray	guifg=lightgray
-"hi htmlSpecialChar	ctermfg=lightgray	guifg=lightgray
+hi htmlSpecialChar ctermfg=70 guifg=lightgray
 "hi javaScriptExpression	ctermfg=lightgray	guifg=lightgray
 "hi htmlString	ctermfg=lightgray	guifg=lightgray
 "hi htmlValue	ctermfg=lightgray	guifg=lightgray
 "hi htmlTagN	ctermfg=lightgray	guifg=lightgray
 "hi htmlTagError	ctermfg=lightgray	guifg=lightgray
-hi htmlEndTag	ctermfg=25	guifg=25
+hi htmlEndTag	ctermfg=248	guifg=25
 "hi htmlArg	ctermfg=lightgray	guifg=lightgray
 "hi htmlEvent	ctermfg=lightgray	guifg=lightgray
 "hi htmlCssDefinition	ctermfg=lightgray	guifg=lightgray
-hi htmlTag	ctermfg=25	guifg=25
-hi htmlTagName	ctermfg=25	guifg=25
-"hi htmlSpecialTagName	ctermfg=lightgray	guifg=lightgray
+hi htmlTag	ctermfg=248	guifg=25
+hi htmlTagName	ctermfg=248	guifg=25
+hi htmlSpecialTagName ctermfg=183 guifg=lightgray
 "hi htmlCommentPart	ctermfg=lightgray	guifg=lightgray
 "hi htmlCommentError	ctermfg=lightgray	guifg=lightgray
 "hi htmlComment	ctermfg=lightgray	guifg=lightgray
@@ -155,7 +162,7 @@ hi htmlTagName	ctermfg=25	guifg=25
 "hi htmlItalic	ctermfg=lightgray	guifg=lightgray
 "hi htmlItalicBoldUnderline	ctermfg=lightgray	guifg=lightgray
 "hi htmlItalicUnderlineBold	ctermfg=lightgray	guifg=lightgray
-hi htmlH1	ctermfg=25	guifg=25
+hi htmlH1	ctermfg=white	guifg=25
 "hi htmlH2	ctermfg=lightgray	guifg=lightgray
 "hi htmlH3	ctermfg=lightgray	guifg=lightgray
 "hi htmlH4	ctermfg=lightgray	guifg=lightgray
@@ -193,7 +200,7 @@ hi htmlH1	ctermfg=25	guifg=25
 "hi javaScriptBraces	ctermfg=lightgray	guifg=lightgray
 "hi javaScriptParens	ctermfg=lightgray	guifg=lightgray
 "hi htmlCssStyleComment	ctermfg=lightgray	guifg=lightgray
-"hi htmlScriptTag	ctermfg=lightgray	guifg=lightgray
+hi htmlScriptTag ctermfg=248 guifg=lightgray
 "hi htmlEventTag	ctermfg=lightgray	guifg=lightgray
 "hi htmlEventSQ	ctermfg=lightgray	guifg=lightgray
 "hi htmlEventDQ	ctermfg=lightgray	guifg=lightgray
@@ -273,6 +280,7 @@ hi htmlH1	ctermfg=25	guifg=25
 "hi erubyComment	ctermfg=lightgray	guifg=lightgray
 
 "================== coffee ========================="
+
 hi def link coffeeStatement Statement
 hi def link coffeeRepeat Repeat
 hi def link coffeeConditional Conditional
@@ -314,3 +322,7 @@ hi def link coffeeBlock coffeeSpecialOp
 hi def link coffeeBracket coffeeBlock
 hi def link coffeeCurly coffeeBlock
 hi def link coffeeParen coffeeBlock
+
+hi coffeePrototypeName  ctermfg=150
+hi coffeeConditional cterm=bold ctermfg=lightblue
+hi coffeeExtendedOp cterm=bold ctermfg=lightblue
