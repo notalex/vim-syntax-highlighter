@@ -172,48 +172,6 @@ syn cluster coffeeAll contains=coffeeStatement,coffeeRepeat,coffeeConditional,
 \                              coffeeProtoAccess,coffeeCurlies,coffeeBrackets,
 \                              coffeeParens
 
-hi def link coffeeStatement Statement
-hi def link coffeeRepeat Repeat
-hi def link coffeeConditional Conditional
-hi def link coffeeException Exception
-hi def link coffeeKeyword Keyword
-hi def link coffeeOperator Operator
-hi def link coffeeExtendedOp coffeeOperator
-hi def link coffeeSpecialOp SpecialChar
-hi def link coffeeBoolean Boolean
-hi def link coffeeGlobal Type
-hi def link coffeeSpecialVar Special
-hi def link coffeeSpecialIdent Identifier
-hi def link coffeeObject Structure
-hi def link coffeeConstant Constant
-hi def link coffeeString String
-hi def link coffeeNumber Number
-hi def link coffeeFloat Float
-hi def link coffeeReservedError Error
-hi def link coffeeObjAssign Identifier
-hi def link coffeeTodo Todo
-hi def link coffeeComment Comment
-hi def link coffeeBlockComment coffeeComment
-hi def link coffeeHeregexComment coffeeComment
-hi def link coffeeEmbedDelim Delimiter
-hi def link coffeeInterpDelim PreProc
-hi def link coffeeEscape SpecialChar
-hi def link coffeeRegexCharSet coffeeRegex
-hi def link coffeeRegex String
-hi def link coffeeHeregex coffeeRegex
-hi def link coffeeHeredoc String
-hi def link coffeeSemicolonError Error
-hi def link coffeeHeregexCharSet coffeeHeregex
-hi def link coffeeSpaceError Error
-hi def link coffeeDotAccess coffeeExtendedOp
-hi def link coffeeProtoAccess coffeeExtendedOp
-
-" These are highlighted the same as commas since they tend to go together.
-hi def link coffeeBlock coffeeSpecialOp
-hi def link coffeeBracket coffeeBlock
-hi def link coffeeCurly coffeeBlock
-hi def link coffeeParen coffeeBlock
-
 if !exists('b:current_syntax')
   let b:current_syntax = 'coffee'
 endif
