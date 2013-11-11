@@ -5,6 +5,8 @@ if exists("syntax_on")
     syntax reset
 endif
 
+"===================== General ====================="
+
 " highlight Normal guibg=#EDE9E3
 " hi Cursor		ctermfg=red	guifg=lightgray
 " hi CursorIM		ctermfg=red	guifg=lightgray
@@ -42,10 +44,13 @@ hi TabLineSel ctermbg=none ctermfg=Cyan
 hi Pmenu ctermfg=2 ctermbg=black
 hi PmenuSel ctermfg=white ctermbg=black
 
-" syntax highlighting groups
+"================== Syntax Groups =================="
+
+hi String ctermfg=185 guifg=185 cterm=NONE
+hi Regexp ctermfg=208 guifg=208
 hi LineNr		ctermfg=252	guifg=252
-hi Comment		ctermfg=darkgreen	guifg=28
-hi Constant		ctermfg=185	guifg=185
+hi Comment		ctermfg=244	guifg=244
+hi Constant		ctermfg=44	guifg=44 cterm=bold
 hi Identifier		ctermfg=252	guifg=252
 hi Statement		ctermfg=32	guifg=32
 hi PreProc		ctermfg=252	guifg=252
@@ -77,13 +82,13 @@ hi rubyInteger			ctermfg=185	guifg=185
 hi rubyFloat			ctermfg=185	guifg=185
 hi rubyLocalVariableOrMethod	ctermfg=red	guifg=red
 hi rubyBlockArgument		ctermfg=red	guifg=red
-hi rubyConstant			ctermfg=252	guifg=252
-hi rubySymbol			ctermfg=3	guifg=167
+hi def link rubyConstant			Constant
+hi rubySymbol			ctermfg=157	guifg=157
 hi rubyStringSpecial		ctermfg=red	guifg=red
 hi rubyBlockParameter		ctermfg=252	guifg=252
 hi rubyPredefinedConstant	ctermfg=red	guifg=red
-hi rubyRegexp			ctermfg=167	guifg=167
-hi rubyString			ctermfg=185	guifg=185
+hi def link rubyRegexp        Regexp
+hi def link rubyString        String
 hi rubyBoolean			ctermfg=252	guifg=252
 hi rubyPseudoVariable		ctermfg=252	guifg=252
 hi rubyMethodDeclaration	ctermfg=red	guifg=red
@@ -91,7 +96,7 @@ hi rubyClassDeclaration		ctermfg=red	guifg=red
 hi rubyModuleDeclaration	ctermfg=red	guifg=red
 hi rubyFunction			ctermfg=252	guifg=252
 hi rubyDefine			ctermfg=darkblue	guifg=32
-hi rubyClass			ctermfg=5	guifg=25
+hi rubyClass			ctermfg=245	guifg=245 cterm=bold
 hi rubyModule			ctermfg=5	guifg=25
 hi rubyBlock			ctermfg=252	guifg=252
 hi rubyConditional		ctermfg=2	guifg=81
@@ -107,7 +112,7 @@ hi rubyException		ctermfg=red	guifg=red
 hi rubyInclude			ctermfg=252	guifg=252
 hi rubySharpBang		ctermfg=red	guifg=red
 hi rubyTodo			ctermfg=34	guifg=34
-hi rubyComment			ctermfg=28	guifg=28
+hi def link rubyComment			Comment
 hi rubyDocumentation		ctermfg=red	guifg=red
 hi rubyData			ctermfg=red	guifg=red
 
@@ -307,9 +312,9 @@ hi def link coffeeHeregexComment coffeeComment
 hi def link coffeeEmbedDelim Delimiter
 hi def link coffeeInterpDelim PreProc
 hi def link coffeeEscape SpecialChar
-hi def link coffeeRegexCharSet coffeeRegex
-hi def link coffeeRegex String
-hi def link coffeeHeregex coffeeRegex
+hi def link coffeeRegexCharSet coffeeRegexp
+hi def link coffeeRegexp           Regexp
+hi def link coffeeHeregex coffeeRegexp
 hi def link coffeeHeredoc String
 hi def link coffeeSemicolonError Error
 hi def link coffeeHeregexCharSet coffeeHeregex
