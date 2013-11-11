@@ -64,6 +64,7 @@ hi Ignore		ctermfg=red	guifg=red
 hi Error		ctermfg=160 ctermbg=none	guifg=#d70000
 hi Todo			ctermfg=red	guifg=red
 hi Integer ctermfg=35 guifg=#00af5f
+hi ClassName  ctermfg=245	guifg=#8a8a8a cterm=bold gui=bold
 
 "===================== Ruby ========================"
 
@@ -100,8 +101,8 @@ hi rubyClassDeclaration		ctermfg=red	guifg=red
 hi rubyModuleDeclaration	ctermfg=red	guifg=red
 hi rubyFunction			ctermfg=252	guifg=#d0d0d0
 hi rubyDefine			ctermfg=darkblue	guifg=#00afff
-hi rubyClass			ctermfg=245	guifg=#8a8a8a cterm=bold gui=bold
-hi rubyModule			ctermfg=5	guifg=white
+hi def link rubyClass			    ClassName
+hi def link rubyModule			  ClassName
 hi rubyBlock			ctermfg=252	guifg=#d0d0d0
 hi rubyConditional		ctermfg=64	guifg=#5f8700
 hi rubyRepeat			ctermfg=81	guifg=#5fd7ff
