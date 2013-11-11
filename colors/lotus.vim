@@ -38,6 +38,7 @@ hi StatusLineNC ctermfg=DarkGray guifg=LightGray
 " hi Menu		ctermfg=red	guifg=lightgray
 " hi Scrollbar		ctermfg=red	guifg=lightgray
 " hi Tooltip		ctermfg=red	guifg=lightgray
+hi helpExample ctermfg=118
 
 hi TabLineFill ctermfg=DarkGray
 hi TabLine ctermbg=DarkGray ctermfg=Black cterm=none
