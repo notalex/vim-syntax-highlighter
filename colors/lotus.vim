@@ -336,3 +336,10 @@ hi def link coffeeParen coffeeBlock
 hi coffeePrototypeName  ctermfg=150
 hi coffeeConditional cterm=bold ctermfg=lightblue
 hi coffeeExtendedOp cterm=bold ctermfg=lightblue
+
+" Diff
+hi DiffText ctermbg=LightYellow ctermfg=Black " changed portion in partial line
+hi DiffChange ctermbg=none                  " unchanged portion in partial line
+
+hi DiffAdd ctermbg=LightYellow ctermfg=Black
+hi DiffDelete ctermbg=none ctermfg=Red
