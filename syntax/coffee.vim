@@ -117,7 +117,7 @@ syn match coffeeEscape /\\\d\d\d\|\\x\x\{2\}\|\\u\x\{4\}\|\\./ contained display
 
 " A regex -- must not follow a parenthesis, number, or identifier, and must not
 " be followed by a number
-syn region coffeeRegex start=#\%(\%()\|\i\@<!\d\)\s*\|\i\)\@<!/=\@!\s\@!#
+syn region coffeeRegexp start=#\%(\%()\|\i\@<!\d\)\s*\|\i\)\@<!/=\@!\s\@!#
 \                      end=#/[gimy]\{,4}\d\@!#
 \                      oneline contains=@coffeeBasicString,coffeeRegexCharSet
 syn region coffeeRegexCharSet start=/\[/ end=/]/ contained
@@ -166,7 +166,7 @@ syn cluster coffeeAll contains=coffeeStatement,coffeeRepeat,coffeeConditional,
 \                              coffeeObject,coffeeConstant,coffeeString,
 \                              coffeeNumber,coffeeFloat,coffeeReservedError,
 \                              coffeeObjAssign,coffeeComment,coffeeBlockComment,
-\                              coffeeEmbed,coffeeRegex,coffeeHeregex,
+\                              coffeeEmbed,coffeeRegexp,coffeeHeregex,
 \                              coffeeHeredoc,coffeeSpaceError,
 \                              coffeeSemicolonError,coffeeDotAccess,
 \                              coffeeProtoAccess,coffeeCurlies,coffeeBrackets,
