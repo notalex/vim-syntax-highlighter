@@ -9,7 +9,7 @@ let g:colors_name = 'lotus'
 
 "===================== General ====================="
 
-" highlight Normal guibg=#EDE9E3
+hi Normal guibg=#262626 guifg=white
 " hi Cursor		ctermfg=red	guifg=lightgray
 " hi CursorIM		ctermfg=red	guifg=lightgray
 " hi Directory		ctermfg=red	guifg=lightgray
@@ -49,28 +49,28 @@ hi PmenuSel ctermfg=white ctermbg=black
 
 "================== Syntax Groups =================="
 
-hi String ctermfg=185 guifg=white cterm=NONE
-hi Regexp ctermfg=208 guifg=white
-hi LineNr		ctermfg=252	guifg=white
-hi Comment		ctermfg=244	guifg=white
-hi Constant		ctermfg=44	guifg=white cterm=bold
-hi Identifier		ctermfg=252	guifg=white
-hi Statement		ctermfg=32	guifg=white
+hi String ctermfg=185 guifg=#d7d75f cterm=NONE
+hi Regexp ctermfg=208 guifg=#ff8700
+hi LineNr		ctermfg=252	guifg=#d0d0d0
+hi Comment		ctermfg=244	guifg=#808080
+hi Constant		ctermfg=44	guifg=#00d7d7 cterm=bold gui=bold
+hi Identifier		ctermfg=252	guifg=#d0d0d0
+hi Statement		ctermfg=32	guifg=#0087d7
 hi PreProc		ctermfg=252	guifg=white
 hi Type		ctermfg=167	guifg=white
 hi Special		ctermfg=252	guifg=white
 hi Underlined   ctermfg=grey  guifg=red
 hi Ignore		ctermfg=red	guifg=red
-hi Error		ctermfg=160 ctermbg=none	guifg=white
+hi Error		ctermfg=160 ctermbg=none	guifg=#d70000
 hi Todo			ctermfg=red	guifg=red
 
 "===================== Ruby ========================"
 
-hi rubyEscape			ctermfg=252	guifg=white
-hi rubyInterpolationDelimiter	ctermfg=252	guifg=white
-hi rubyInterpolation		ctermfg=252	guifg=white
+hi rubyEscape			ctermfg=252	guifg=#d0d0d0
+hi rubyInterpolationDelimiter	ctermfg=252	guifg=#d0d0d0
+hi rubyInterpolation		ctermfg=252	guifg=#d0d0d0
 hi rubyPredefinedVariable	ctermfg=red	guifg=red
-hi rubyInstanceVariable		ctermfg=66	guifg=white
+hi rubyInstanceVariable		ctermfg=66	guifg=#5f8787
 hi rubyClassVariable		ctermfg=red	guifg=red
 hi rubyGlobalVariable		ctermfg=red	guifg=red
 hi rubyPredefinedVariable	ctermfg=red	guifg=red
@@ -82,46 +82,46 @@ hi rubyNestedAngleBrackets	ctermfg=red	guifg=red
 hi rubyNestedSquareBrackets	ctermfg=red	guifg=red
 hi rubyASCIICode		ctermfg=red	guifg=red
 hi rubyInteger			ctermfg=185	guifg=white
-hi rubyFloat			ctermfg=185	guifg=white
+hi rubyFloat			ctermfg=185	guifg=#d7d75f
 hi rubyLocalVariableOrMethod	ctermfg=red	guifg=red
 hi rubyBlockArgument		ctermfg=red	guifg=red
 hi def link rubyConstant			Constant
-hi rubySymbol			ctermfg=157	guifg=white
+hi rubySymbol			ctermfg=157	guifg=#afffaf
 hi rubyStringSpecial		ctermfg=red	guifg=red
-hi rubyBlockParameter		ctermfg=252	guifg=white
+hi rubyBlockParameter		ctermfg=252	guifg=#d0d0d0
 hi rubyPredefinedConstant	ctermfg=red	guifg=red
 hi def link rubyRegexp        Regexp
 hi def link rubyString        String
-hi rubyBoolean			ctermfg=252	guifg=white
-hi rubyPseudoVariable		ctermfg=252	guifg=white
+hi rubyBoolean			ctermfg=252	guifg=#d0d0d0
+hi rubyPseudoVariable		ctermfg=252	guifg=#d0d0d0
 hi rubyMethodDeclaration	ctermfg=red	guifg=red
 hi rubyClassDeclaration		ctermfg=red	guifg=red
 hi rubyModuleDeclaration	ctermfg=red	guifg=red
-hi rubyFunction			ctermfg=252	guifg=white
-hi rubyDefine			ctermfg=darkblue	guifg=white
-hi rubyClass			ctermfg=245	guifg=white cterm=bold
+hi rubyFunction			ctermfg=252	guifg=#d0d0d0
+hi rubyDefine			ctermfg=darkblue	guifg=#00afff
+hi rubyClass			ctermfg=245	guifg=#8a8a8a cterm=bold gui=bold
 hi rubyModule			ctermfg=5	guifg=white
-hi rubyBlock			ctermfg=252	guifg=white
-hi rubyConditional		ctermfg=2	guifg=white
-hi rubyRepeat			ctermfg=81	guifg=white
-hi rubyControl			ctermfg=45	guifg=white
+hi rubyBlock			ctermfg=252	guifg=#d0d0d0
+hi rubyConditional		ctermfg=64	guifg=#5f8700
+hi rubyRepeat			ctermfg=81	guifg=#5fd7ff
+hi rubyControl			ctermfg=45	guifg=#00d7ff
 hi rubyKeyword			ctermfg=red	guifg=red
 hi rubyOperator			ctermfg=red	guifg=red
 hi rubyBeginEnd			ctermfg=red	guifg=red
-hi rubyAccess			ctermfg=32	guifg=white
-hi rubyAttribute		ctermfg=252	guifg=white
+hi rubyAccess			ctermfg=32	guifg=#0087d7
+hi rubyAttribute		ctermfg=252	guifg=#d0d0d0
 hi rubyEval			ctermfg=red	guifg=red
 hi rubyException		ctermfg=red	guifg=red
-hi rubyInclude			ctermfg=252	guifg=white
+hi rubyInclude			ctermfg=252	guifg=#d0d0d0
 hi rubySharpBang		ctermfg=red	guifg=red
-hi rubyTodo			ctermfg=34	guifg=white
+hi rubyTodo			ctermfg=34	guifg=#00af00
 hi def link rubyComment			Comment
 hi rubyDocumentation		ctermfg=red	guifg=red
 hi rubyData			ctermfg=red	guifg=red
 
-hi railsMethod    ctermfg=107 guifg=white
+hi railsMethod    ctermfg=107 guifg=#87af5f
 hi railsUserClass  ctermfg=28 cterm=bold
-hi railsUserMethod  ctermfg=107 guifg=white
+hi railsUserMethod  ctermfg=107 guifg=#87af5f
 
 " hi rubyRailsError	ctermfg=lightgray	guifg=lightgray
 " hi rubyRailsDeprecatedMethod	ctermfg=lightgray	guifg=lightgray
@@ -137,12 +137,12 @@ hi htmlSpecialChar ctermfg=70 guifg=lightgray
 "hi htmlValue	ctermfg=lightgray	guifg=lightgray
 "hi htmlTagN	ctermfg=lightgray	guifg=lightgray
 "hi htmlTagError	ctermfg=lightgray	guifg=lightgray
-hi htmlEndTag	ctermfg=248	guifg=white
+hi htmlEndTag	ctermfg=248	guifg=#a8a8a8
 "hi htmlArg	ctermfg=lightgray	guifg=lightgray
 "hi htmlEvent	ctermfg=lightgray	guifg=lightgray
 "hi htmlCssDefinition	ctermfg=lightgray	guifg=lightgray
-hi htmlTag	ctermfg=248	guifg=white
-hi htmlTagName	ctermfg=248	guifg=white
+hi htmlTag	ctermfg=248	guifg=#a8a8a8
+hi htmlTagName	ctermfg=248	guifg=#a8a8a8
 hi htmlSpecialTagName ctermfg=183 guifg=lightgray
 "hi htmlCommentPart	ctermfg=lightgray	guifg=lightgray
 "hi htmlCommentError	ctermfg=lightgray	guifg=lightgray
