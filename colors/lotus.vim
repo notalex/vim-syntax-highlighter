@@ -5,8 +5,6 @@ if exists("syntax_on")
     syntax reset
 endif
 
-let g:colors_name="lotus"
-
 " highlight Normal guibg=#EDE9E3
 " hi Cursor		ctermfg=red	guifg=lightgray
 " hi CursorIM		ctermfg=red	guifg=lightgray
