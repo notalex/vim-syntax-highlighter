@@ -1,4 +1,6 @@
+set term=xterm-256color
 set background=dark
+
 hi clear
 
 if exists("syntax_on")
