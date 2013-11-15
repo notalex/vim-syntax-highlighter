@@ -101,7 +101,7 @@ hi rubyPseudoVariable		ctermfg=252	guifg=#d0d0d0
 hi rubyMethodDeclaration	ctermfg=red	guifg=red
 hi rubyClassDeclaration		ctermfg=red	guifg=red
 hi rubyModuleDeclaration	ctermfg=red	guifg=red
-hi rubyFunction			ctermfg=252	guifg=#d0d0d0
+hi rubyFunction			ctermfg=255	guifg=#d0d0d0
 hi rubyDefine			ctermfg=darkblue	guifg=#00afff
 hi def link rubyClass			    ClassName
 hi def link rubyModule			  ClassName
@@ -116,7 +116,7 @@ hi rubyAccess			ctermfg=32	guifg=#0087d7
 hi rubyAttribute		ctermfg=252	guifg=#d0d0d0
 hi rubyEval			ctermfg=red	guifg=red
 hi rubyException		ctermfg=red	guifg=red
-hi rubyInclude			ctermfg=252	guifg=#d0d0d0
+hi rubyInclude			ctermfg=255	guifg=#d0d0d0
 hi rubySharpBang		ctermfg=red	guifg=red
 hi rubyTodo			ctermfg=34	guifg=#00af00
 hi def link rubyComment			Comment
