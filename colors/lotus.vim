@@ -74,7 +74,7 @@ hi rubyEscape			ctermfg=252	guifg=#d0d0d0
 hi rubyInterpolationDelimiter	ctermfg=252	guifg=#d0d0d0
 hi rubyInterpolation		ctermfg=252	guifg=#d0d0d0
 hi rubyPredefinedVariable	ctermfg=red	guifg=red
-hi rubyInstanceVariable		ctermfg=66	guifg=#5f8787
+hi rubyInstanceVariable		ctermfg=252	guifg=#d0d0d0
 hi rubyClassVariable		ctermfg=red	guifg=red
 hi rubyGlobalVariable		ctermfg=red	guifg=red
 hi rubyPredefinedVariable	ctermfg=red	guifg=red
