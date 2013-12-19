@@ -345,3 +345,7 @@ hi DiffChange ctermbg=none                  " unchanged portion in partial line
 
 hi DiffAdd ctermbg=LightYellow ctermfg=Black
 hi DiffDelete ctermbg=none ctermfg=Red
+
+"================== readline ========================="
+hi readlineFunction ctermfg=41
+hi readlineVariable ctermfg=145 cterm=bold
