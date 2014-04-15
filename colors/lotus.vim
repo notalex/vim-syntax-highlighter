@@ -351,4 +351,4 @@ hi readlineFunction ctermfg=41
 hi readlineVariable ctermfg=145 cterm=bold
 
 " Match parenthesis highlighted on account of matchparen standard plugin.
-hi MatchParen ctermbg=black guibg=black
+hi MatchParen ctermbg=red guibg=red
