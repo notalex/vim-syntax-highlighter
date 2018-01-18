@@ -357,3 +357,7 @@ hi readlineVariable ctermfg=145 cterm=bold
 
 " Match parenthesis highlighted on account of matchparen standard plugin.
 hi MatchParen ctermbg=red guibg=red
+
+" Neovim +winhighlight
+hi ActiveWindow ctermbg=16
+hi InactiveWindow ctermbg=233
