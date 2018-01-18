@@ -338,6 +338,12 @@ hi coffeePrototypeName  ctermfg=150
 hi coffeeConditional cterm=bold ctermfg=lightblue
 hi coffeeExtendedOp cterm=bold ctermfg=lightblue
 
+"================== markdown ========================="
+hi markdownUrl ctermfg=241
+hi markdownCode ctermfg=144
+hi markdownHeadingDelimiter cterm=undercurl ctermfg=160
+hi markdownItalic ctermbg=NONE
+
 " Diff
 hi DiffText ctermbg=LightYellow ctermfg=Black " changed portion in partial line
 hi DiffChange ctermbg=none                  " unchanged portion in partial line
