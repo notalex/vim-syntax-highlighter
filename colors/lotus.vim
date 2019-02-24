@@ -361,3 +361,13 @@ hi MatchParen ctermbg=red guibg=red
 " Neovim +winhighlight
 hi ActiveWindow ctermbg=16
 hi InactiveWindow ctermbg=233
+
+"================== clojure ========================="
+hi clojureFunc ctermfg=172
+hi clojureMacro ctermfg=172
+hi clojureDefine ctermfg=172
+hi clojureSymbol ctermfg=252
+hi clojureSpecial ctermfg=172
+hi clojureMap ctermfg=214 cterm=bold
+hi clojureParen ctermfg=135 cterm=bold
+hi clojureVector ctermfg=214 cterm=bold
