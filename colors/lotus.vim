@@ -11,6 +11,7 @@ let g:colors_name = 'lotus'
 "===================== General ====================="
 
 hi Normal guibg=#262626 guifg=white
+hi CursorLine cterm=NONE ctermbg=234
 " hi Cursor		ctermfg=red	guifg=lightgray
 " hi CursorIM		ctermfg=red	guifg=lightgray
 " hi Directory		ctermfg=red	guifg=lightgray
