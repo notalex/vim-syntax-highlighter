@@ -67,6 +67,9 @@ hi Error		ctermfg=160 ctermbg=none	guifg=#d70000
 hi Todo			ctermfg=red	guifg=red
 hi Integer ctermfg=35 guifg=#00af5f
 hi ClassName  ctermfg=245	guifg=#8a8a8a cterm=bold gui=bold
+hi Conditional ctermfg=red guifg=red
+hi Repeat ctermfg=red cterm=bold guifg=red
+hi Include ctermfg=247 guifg=#d0d0d0 cterm=bold
 
 "===================== Ruby ========================"
 
