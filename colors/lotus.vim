@@ -43,8 +43,6 @@ hi StatusLineNC ctermfg=DarkGray guifg=LightGray
 hi helpExample ctermfg=118
 
 hi TabLineFill ctermfg=DarkGray
-hi TabLine ctermbg=DarkGray ctermfg=Black cterm=none
-hi TabLineSel ctermbg=none ctermfg=Cyan
 
 hi Pmenu ctermfg=2 ctermbg=black
 hi PmenuSel ctermfg=white ctermbg=black
