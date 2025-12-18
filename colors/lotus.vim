@@ -10,7 +10,8 @@ let g:colors_name = 'lotus'
 
 "===================== General ====================="
 
-hi Normal guibg=#262626 guifg=white
+hi Normal ctermbg=black guibg=black guifg=white
+hi NormalNC ctermbg=233 guibg=#121212 guifg=white
 hi CursorLine cterm=NONE ctermbg=234
 " hi Cursor		ctermfg=red	guifg=lightgray
 " hi CursorIM		ctermfg=red	guifg=lightgray
@@ -361,8 +362,8 @@ hi readlineVariable ctermfg=145 cterm=bold
 hi MatchParen ctermbg=red guibg=red
 
 " Neovim +winhighlight
-hi ActiveWindow ctermbg=16
-hi InactiveWindow ctermbg=233
+hi ActiveWindow ctermbg=black guibg=black
+hi InactiveWindow ctermbg=233 guibg=#121212
 
 "================== clojure ========================="
 hi clojureFunc ctermfg=172
