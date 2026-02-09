@@ -55,7 +55,7 @@ hi Regexp ctermfg=208 guifg=#ff8700
 hi LineNr		ctermfg=252	guifg=#d0d0d0
 hi Comment		ctermfg=244	guifg=#808080
 hi Constant		ctermfg=44	guifg=#00d7d7 cterm=bold gui=bold
-hi Identifier		ctermfg=252	guifg=#d0d0d0
+hi Identifier		ctermfg=yellow	guifg=#d0d0d0
 hi Statement		ctermfg=32	guifg=#0087d7
 hi PreProc		ctermfg=252	guifg=white
 hi Type		ctermfg=167	guifg=white
@@ -374,3 +374,8 @@ hi clojureSpecial ctermfg=172
 hi clojureMap ctermfg=214 cterm=bold
 hi clojureParen ctermfg=135 cterm=bold
 hi clojureVector ctermfg=214 cterm=bold
+
+"================== Java ========================="
+hi JavaScopeDecl ctermfg=white guifg=white cterm=italic gui=italic
+hi javaConceptKind ctermfg=white guifg=white cterm=italic gui=italic
+hi javaStorageClass ctermfg=white guifg=white cterm=italic gui=italic
